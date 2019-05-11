@@ -1,2 +1,10 @@
 theme: jekyll-theme-hacker
 title: DC864
+github: [metadata]
+plugins:
+  - jekyll-paginate
+
+google_analytics: UA-64096020-2
+
+# Permalinks
+permalink: :title:output_ext

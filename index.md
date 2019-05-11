@@ -1,3 +1,7 @@
+---
+layout: default
+paginate: 5
+---
 <ul>
   {% for post in site.posts %}
     <li>
