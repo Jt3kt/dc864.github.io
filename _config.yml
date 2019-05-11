@@ -4,7 +4,7 @@ github: [metadata]
 plugins:
   - jekyll-paginate
 
-google_analytics: UA-64096020-2
+google_analytics: UA-139997393-1
 
 # Permalinks
 permalink: :title:output_ext
