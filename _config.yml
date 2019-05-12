@@ -3,6 +3,7 @@ title: DC864
 github: [metadata]
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 google_analytics: UA-139997393-1
 
