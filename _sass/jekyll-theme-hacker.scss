@@ -318,26 +318,3 @@ a:hover {
 .cf {
   zoom:1;
 }
-
-#myBtn {
-  position: sticky;
-  bottom: 10px;
-  float: right;
-  right: 18.5%;
-  left: 77.25%;
-  max-width: 30px;
-  width: 100%;
-  font-size: 12px;
-  background-color: #9ddf23bd; /* Set a background color */
-  color: rgba(255, 255, 255, 0.582); /* Text color */
-  border-color: rgba(85, 85, 85, 0.2);
-  padding: .5px;
-  border-radius: 4px;
-  cursor: pointer; /* Add a mouse pointer on hover */
-}
-
-
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
