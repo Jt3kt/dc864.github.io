@@ -1,0 +1,11 @@
+<footer class="footer">
+    {%- if page.author and page.twitter -%}
+      <h2> {{ page.title }} by <a href="{{ page.twitter }}" target = "_blank">{{ page.author }}</a>  <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2>
+    {%- elsif page.author -%}
+      <h2> {{ page.title }} by {{ page.author }} <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2> 
+    {%- elsif page.title -%}
+      <h2> {{ page.title }}  <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2>
+    {%- else -%}
+      <h2> {{ site.title }} <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2>
+    {%- endif -%}
+</footer>

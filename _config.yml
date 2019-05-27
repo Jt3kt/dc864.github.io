@@ -2,6 +2,7 @@ theme: jekyll-theme-hacker
 url: https://www.dc864.org
 title: DC864
 github: [metadata]
+email: DEFCON864info[at]gmail[dot]com
 plugins:
   - jekyll-paginate
   - jekyll-sitemap

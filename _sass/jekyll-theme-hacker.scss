@@ -4,6 +4,7 @@
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
 $header: $conifer !default;
+$footer: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 
@@ -78,11 +79,69 @@ header h2 {
   color: #666;
 }
 
+.headerlogo {
+  width: 50px;
+  position: relative;
+  float: right;
+  margin: -40px 14% 0 auto;
+  z-index: 999;
+}
+
+.getapp-nav-img {
+    height: 120px;
+    margin: auto;
+} 
+
+@media (max-width: 480px) {
+  .headerlogo {
+    float: none;
+    text-align: center;
+    margin: 50px auto 0 auto;
+  }
+}
+
 #downloads .btn {
   display: inline-block;
   text-align: center;
   margin: 0;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px dashed $conifer; //footer;
+  width: 100%;
+  margin: 40px 0 0 0;
+  height: 2.5rem;            /* Footer height */
+}
+
+footer h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0 0 0 -40px;
+  text-indent: 10px;
+  font-weight: bold;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: $conifer;//$header;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  letter-spacing: -0px;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer h1:before {
+  content: "./";
+  font-size: 24px;
+}
+
+footer h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 300;
+  color: #666;
+}
+
 
 /* Main Content
 */
@@ -260,24 +319,22 @@ a:hover {
   zoom:1;
 }
 
-/* 864 Custom additions */
-.headerlogo {
-    width: 50px;
-    position: relative;
-    float: right;
-    margin: -40px 14% 0 auto;
-    z-index: 999;
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 60px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #9ddf23bd; /* Set a background color */
+  color: rgba(255, 255, 255, 0.582); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
 
-.getapp-nav-img {
-    height: 120px;
-    margin: auto;
-} 
-
-@media (max-width: 480px) {
-  .headerlogo {
-    float: none;
-    text-align: center;
-    margin: 50px auto 0 auto;
-  }
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }

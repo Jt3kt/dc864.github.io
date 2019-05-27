@@ -2,29 +2,15 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   {% include head.html %}
   <body>
-
-    <header>
-      <div class="container">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <div class="headerlogo" style="">
-            <div class="social-nav">
-              <a href='/index.html'><img class="getapp-nav-img" src='{{ site.baseurl }}/images/864.png'/></a>
-          </div>
-        </div>
-
-        <section id="nav">
-          &#164<a href="/index.html"><span></span>Home</a> 
-          &#164<a href="/about.html"><span></span>About</a>
-        </section>
-        <h2></h2>
-        <h2>DefCon group of the Upstate</h2>
-      </div>
-    </header>
-
+    <script src=/assets/js/top.js type="text/javascript"> 
+    </script>
+    {% include header.html %}
     <div class="container">
       <section id="main_content">
         {{ content }}
       </section>
+      <button onclick="topFunction()" id="myBtn" title="To the top">▲</button>
     </div>
+    {% include footer.html %}
   </body>
 </html>

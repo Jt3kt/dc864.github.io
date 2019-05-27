@@ -2,12 +2,13 @@
 title: About DC864
 ---
 ## Location: Greenville, South Carolina USA
-### Co Founders: Ben Acord (Overcast) and Eric Hart (Jtekt)
-### POC Email: dc864[at]gmail[dot]com
+### Co Founders: Ben Acord (Overcast) and <a href="https://twitter.com/Eric_23_Hart" target = "_blank">Eric Hart (Jtekt)</a>
+### POC Email: DEFCON864info[at]gmail[dot]com
+### Twitter: <a href="https://twitter.com/defcon864" target = "_blank">Defcon864</a>
 ---  
 
 ## Meeting Schedule:
-We meet on the 1st Thursday of every month at 6:00PM ET. Join our [Meetup](https://www.meetup.com/DefCon864/) page for up to date schedules and events.
+We meet on the 1st Thursday of every month at 6:00PM ET. Join our <a href="https://www.meetup.com/DefCon864/" target = "_blank">Meetup</a> page for up to date schedules and events.
 
 ## Address:
 Synergy Mill, 400 Birnie St, Greenville, SC 29611
@@ -17,6 +18,11 @@ DC864 started in the fall of 2018, bringing together hackers in the Upstate, SC 
 
 ## Interests: 
 Penetration testing, locksport, malware analysis, reverse engineering.
+
+## Thanks to:
+Our friends over at the <a href="https://synergymill.com/" target = "_blank">Synergy Mill</a> for being a gracious host space for our meetings.  The Synergy Mill is a 2500 square foot makerspace offering woodworking, metalworking, electronic tools, and many additional resources for hobby and professional building.  
+<br>
+<br>
 
 ---
 
