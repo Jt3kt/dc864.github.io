@@ -2,14 +2,13 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   {% include head.html %}
   <body>
-    <script src=/assets/js/top.js type="text/javascript"> 
-    </script>
+    <a name="top"></a>
     {% include header.html %}
     <div class="container">
       <section id="main_content">
         {{ content }}
       </section>
-      <button onclick="topFunction()" id="myBtn" title="To the top">▲</button>
+      <button id="myBtn"><a href="#top">▲</a></button>
     </div>
     {% include footer.html %}
   </body>
