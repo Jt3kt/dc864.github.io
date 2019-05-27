@@ -1,4 +1,5 @@
 <footer class="footer">
+  <div class="container">
     {%- if page.author and page.twitter -%}
       <h2> {{ page.title }} by <a href="{{ page.twitter }}" target = "_blank">{{ page.author }}</a>  <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2>
     {%- elsif page.author -%}
@@ -8,4 +9,5 @@
     {%- else -%}
       <h2> {{ site.title }} <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2>
     {%- endif -%}
+  </div>
 </footer>
