@@ -16,7 +16,7 @@ google_analytics: UA-139997393-1
 permalink: :title:output_ext
 
 # Support for tagging
-tag_page: '/blog/tags/'
+tag_page: '/blog/tags.html'
 category_page: '/blog/categories/'
 
 #Paginate
