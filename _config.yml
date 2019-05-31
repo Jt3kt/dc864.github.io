@@ -1,4 +1,6 @@
 theme: jekyll-theme-hacker
+description: 'The Official Defcon Group of the Upstate South Carolina'
+
 url: https://www.dc864.org
 title: DC864
 github: [metadata]
@@ -11,3 +13,7 @@ google_analytics: UA-139997393-1
 
 # Permalinks
 permalink: :title:output_ext
+
+# Support for tagging
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
