@@ -1,10 +1,4 @@
 ---
 layout: default
+redirect_to: /blog/index.html
 ---
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }} {{ post.date | slice: 0,10 }}</a>
-    </li>
-  {% endfor %}
-</ul>

@@ -8,6 +8,7 @@ email: DEFCON864info@gmail.com
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 google_analytics: UA-139997393-1
 
@@ -17,3 +18,7 @@ permalink: :title:output_ext
 # Support for tagging
 tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
+
+#Paginate
+paginate: 5
+paginate_path: '/blog/page:num'
