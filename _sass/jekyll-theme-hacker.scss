@@ -146,7 +146,7 @@ footer h1:before {
 footer h2 {
   font-size: 18px;
   margin-top: 20px;
-  line-height: 8px;
+  line-height: 12px;
   font-weight: 300;
   color: #666;
 }
@@ -154,7 +154,7 @@ footer h2 {
 footer h3 {
   font-size: 12px;
   margin-top: 20px;
-  line-height: 2px;
+  line-height: normal;
   font-weight: 300;
   color: #666;
 }
@@ -307,7 +307,8 @@ hr {
 }
 
 .posts {
-  line-height: 14px;
+  line-height: normal;
+  ;
 }
 
 /* Links
