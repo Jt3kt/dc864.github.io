@@ -76,7 +76,15 @@ header h1:before {
 header h2 {
   font-size: 24px;
   font-weight: 300;
-  line-height: 22px;
+  margin-top: 12px;
+  line-height: 5px;
+  color: #666;
+}
+
+header h3 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
   color: #666;
 }
 
