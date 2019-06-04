@@ -20,5 +20,5 @@ tag_page: '/blog/tags.html'
 category_page: '/blog/categories/'
 
 #Paginate
-paginate: 5
+paginate: 7
 paginate_path: '/blog/page:num'
