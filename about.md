@@ -3,8 +3,10 @@ title: About DC864
 ---
 ## Location: Greenville, South Carolina USA
 ### Co Founders: Ben Acord (Overcast) and <a href="https://twitter.com/Eric_23_Hart" target = "_blank">Eric Hart (Jtekt)</a>
+### Slack Community: <a href="https://dc864.slack.com/" target = "_blank">https://dc864.slack.com</a>
 ### POC Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
 ### Twitter: <a href="https://twitter.com/defcon864" target = "_blank">Defcon864</a>
+
 ---  
 
 ## Meeting Schedule:
