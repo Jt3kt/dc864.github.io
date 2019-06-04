@@ -1,13 +1,16 @@
 <footer class="footer">
   <div class="container">
     {%- if page.author and page.twitter -%}
-      <h2> {{ page.title }} by <a href="{{ page.twitter }}" target = "_blank">{{ page.author }}</a>  <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2>
+      <h2> {{ page.title }} by <a href="{{ page.twitter }}" target = "_blank">{{ page.author }}</a></h2><h3>
+        © 2019 DC864, All Rights Reserved. DEFCON 864 is a member of <a href="https://defcongroups.org/" target = "_blank">DEFCON GROUPS</a> of the <a href="https://www.defcon.org/" target = "_blank">DEFCON Conferences</a>. </h3>
     {%- elsif page.author -%}
-      <h2> {{ page.title }} by {{ page.author }} <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2> 
+      <h2> {{ page.title }} by {{ page.author }}</h2>
+      <h3> © 2019 DC864, All Rights Reserved. DEFCON 864 is a member of <a href="https://defcongroups.org/" target = "_blank">DEFCON GROUPS</a> of the <a href="https://www.defcon.org/" target = "_blank">DEFCON Conferences</a>. </h3>
     {%- elsif page.title -%}
-      <h2> {{ page.title }}  <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2>
+      <h2>{{ page.title }}</h2>
+      <h3> © 2019 DC864, All Rights Reserved. DEFCON 864 is a member of <a href="https://defcongroups.org/" target = "_blank">DEFCON GROUPS</a> of the <a href="https://www.defcon.org/" target = "_blank">DEFCON Conferences</a>. </h3>
     {%- else -%}
-      <h2> {{ site.title }} <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a> </h2>
+      <h3> © 2019 DC864, All Rights Reserved. DEFCON 864 is a member of <a href="https://defcongroups.org/" target = "_blank">DEFCON GROUPS</a> of the <a href="https://www.defcon.org/" target = "_blank">DEFCON Conferences</a>. </h3>
     {%- endif -%}
   </div>
 </footer>

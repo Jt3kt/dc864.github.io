@@ -145,7 +145,16 @@ footer h1:before {
 
 footer h2 {
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 20px;
+  line-height: 8px;
+  font-weight: 300;
+  color: #666;
+}
+
+footer h3 {
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 2px;
   font-weight: 300;
   color: #666;
 }
