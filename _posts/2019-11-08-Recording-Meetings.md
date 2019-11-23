@@ -40,8 +40,8 @@ Name | Cost | Comment
 [OBS Studio](https://obsproject.com/)|$0.00|Open Broadcaster Software
 Optional: OBS Overlay & Theme| $0.00 | $10-30
 [the Gimp](https://www.gimp.org/)|$0.00|The GNU Impage Manipulation Program
-[Kdenlive](https://kdenlive.org/en/)||Libre Video Editor
-YouTube account||Your soul and all first borns.
+[Kdenlive](https://kdenlive.org/en/)|$0.00|Libre Video Editor
+YouTube account|$0.00|Your soul and all first borns.
 Optional: [Handbrake](https://handbrake.fr/)|$0.00|Open source video transencoder
 __Total:__ | __$740.00__ | Cha-ching
 
@@ -67,20 +67,20 @@ The recording laptop and components take up a decent bit of room on the table.  
 6. Share the Windowed Projector(Scene) in Jitsi.
 
 **Note:** The topic text in the OBS overlay is controlled by the contents of the DC864-Topic.txt file.  If we switch out speakers or flip between topics a simple edit of the text file is automatically picked up by OBS within a few seconds.
-!(/images/overcast/recording-meetings/1911/topic-text.png "Topic text auto updates the OBS display")
+![Topic Text](/images/overcast/recording-meetings/1911/topic-text.png "Topic text auto updates the OBS display")
 7. Monitor the Slack and Jitsi chat during the meeting to troubleshoot or facilitate the remote discussion.
 8. After the presentation click the Stop Recording button in OBS.
 
 ## Editing
 9. Open Gimp and edit the intro and outro images to reflect the content.
 10. Open Kdenlive and Add Clip to bring in the intro and outro images as well as the meeting video.
-!(/images/overcast/recording-meetings/1911/kdenlive-add-clips.png "Add Clips")
+![Add Clips](/images/overcast/recording-meetings/1911/kdenlive-add-clips.png "Add Clips")
 
 11. Switch to Insert Mode to add the intro image, meeting video, and outro image to the timeline.
 12. Switch to Normal Mode and select/drag to resize the intro image to four seconds in length.  Do the same for the outro image.
 13. By default the timeline has two audio and video tracks.  Mute and disable video for V1 and A1.  I find it helpful while editing to move cut content into these tracks to ensure I've removed the correct segment.
 14. When you find a segment to cut use the scissors tool and click the start and end of the track.  Move it into V1, the audio will automatically follow.
-!(/images/overcast/recording-meetings/1911/kdenlive-cut1.png "Cutting out footage")
+![Cut Footage](/images/overcast/recording-meetings/1911/kdenlive-cut1.png "Cutting out footage")
 
 15. After all edits are complete and you are satisfied with the video playback click the Render button to produce the final video.
 
@@ -90,4 +90,4 @@ The recording laptop and components take up a decent bit of room on the table.  
 18. Post the description and video to the dc864.org website.
 19. Tweet the new video and link to the site.  Those that want to can share on LinkedIn or other platforms.
 
-So for now, that's it.  See you on December 5th in person or online.
+That's it for now.  See you on December 5th in person or online.
