@@ -1,10 +1,10 @@
 ---
-title: "Great Geek Gifts List (2019) December Meeting"
-date: 2019-12-05 12:00:00 +0000
+title: "Great Geek Gifts List 2019"
+date: 2019-12-10 12:00:00 +0000
 layout: post
 author: OverCast
 twitter: "https://twitter.com/DefCon864"
-permalink: blog/2019-12-meeting.html
+permalink: blog/meeting-2019-12.html
 tags: [Meeting, Geek Gifts, Projects]
 ---
 # The Great Geek Gifts List (2019)
