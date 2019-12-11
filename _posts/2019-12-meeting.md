@@ -8,7 +8,7 @@ permalink: blog/2019-12-meeting.html
 tags: [Meeting, Geek Gifts, Projects]
 ---
 # The Great Geek Gifts List (2019)
-December 2019 was a great meeting.  Thanks to all who came out and who joined remotely! 
+December 2019 was a great meeting.  Thanks to all who came out and who joined remotely.
 Special thank you to our hosts, [Synergy Mill] (https://www.facebook.com/synergymill/), a fantastic hackerspace.
 
 {% include youtubePlayer.html id="j7S4AHuniBE" %}
