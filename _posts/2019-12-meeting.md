@@ -11,8 +11,6 @@ tags: [Meeting, Geek Gifts, Projects]
 December 2019 was a great meeting.  Thanks to all who came out and who joined remotely.
 Special thank you to our hosts, [Synergy Mill] (https://www.facebook.com/synergymill/), a fantastic hackerspace.
 
-{% include youtubePlayer.html id="j7S4AHuniBE" %}
-
 ## Main Session
 Some of the toys discussed:
 
