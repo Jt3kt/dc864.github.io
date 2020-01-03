@@ -8,13 +8,9 @@ permalink: blog/dynamic-public-cloud-server-ftw.html
 tags: [cloud, dns, intercept traffic, CTF, Linode]
 ---
 > This is for the pirates who clap
-
 > And love the sound
-
 > Attacking from the cloud
-
 > Then we're back and underground
-
 ~ Dual Core, All The Things
 
 TL;DR.
