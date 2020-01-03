@@ -22,7 +22,7 @@ TL;DR.
 # Overview
 There are many reasons why masking your traffic is important.  One specific case relates to the tasks we perform during an authorized hack or researching a potential vulnerability.  Scanning, trial 'n error discovery and exploitation can generate lots of traffic which can lead to your home IP address finding its way on one or more black lists.  Getting a new public IP address for su casa is a pain in the neck while your family enjoys the throwback non-Internet lifestyle of 1985.  
 
-I recently needed to run several external public services but did not want to open any holes in my home perimiter or stand up a domain.  Those would be overkill to validate what I was researching, validate data exfiltration and perimiter leak vulnerabilities.  My requirements are simply: a dynamic public IP address in the wild to host DNS and web servers, SSH access to inspect DNS and TLS traffic.  This would work for any online CTF or pentest engagement where you want to validate the target ability to communicate external to the organization.
+I recently needed to run several external public services but did not want to open any holes in my home perimiter or stand up a domain.  Those would be overkill to validate what I was researching, validate data exfiltration and perimiter leak vulnerabilities.  My requirements are simply: a dynamic public IP address in the wild to host DNS and web servers, SSH access to inspect DNS and TLS traffic.  This would work for any online CTF or pentest engagement where you want to validate the targets ability to communicate external to the organization.
 
 The solution I went with -and it worked really well- was to spin up a [Linode Nanode server](https://www.linode.com/products/nanodes/).  The full engagement cost only $0.09 for 10 hours of system uptime.  In many respects this write-up is cloud vendor agnostic.  While I use [Linode](https://www.linode.com) here you can follow the same steps on a different provider with minor variation.
 
@@ -30,9 +30,9 @@ The solution I went with -and it worked really well- was to spin up a [Linode Na
 
 ## Setup
 Signing up for the cloud provider is a straight forward process.  No surprises here.  Creating a Nanode is just two steps:
-1. Click __Create__
+1. Under the __Linode__ menu option Click __Create a Linode__
 
-![create](/images/overcast/dynamic-public-cloud-server-ftw/01-create-a-nanode.png){:height="50%" width="50%"}
+    ![create](/images/overcast/dynamic-public-cloud-server-ftw/01-create-a-nanode.png){:height="50%" width="50%"}
 
 2. Define your settings
 * Pick a __distro__
@@ -42,11 +42,11 @@ Signing up for the cloud provider is a straight forward process.  No surprises h
 * Set your SSH keys or a root password for connecting.
 * Click __Create__
 
-![settings](/images/overcast/dynamic-public-cloud-server-ftw/02-nanode-settings.png){:height="50%" width="50%"}
+    ![settings](/images/overcast/dynamic-public-cloud-server-ftw/02-nanode-settings.png){:height="50%" width="50%"}
 
 Once you click the create button it takes a few seconds for the new box to provision and boot.  The __Summary__ page lists the IPv4 and IPv6 addresses.
 
-![boot](/images/overcast/dynamic-public-cloud-server-ftw/03-boot.png){:height="50%" width="50%"}
+    ![boot](/images/overcast/dynamic-public-cloud-server-ftw/03-boot.png){:height="50%" width="50%"}
 
 Two console web shells options are provided by Linode (Weblish and Glish) but you'll want to use your own SSH session from your box.  Once you gain SSH access you can do all the normal sysadmin things to scaffold your platform.  I was raised by graybeards so the lack of maintaining tools such as netstat and ifconfig is disconcerting to say the least.  Yet I will resist the urge to install net-tools.  This host is bare bones right now so let's add what we need.
 
