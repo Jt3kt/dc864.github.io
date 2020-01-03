@@ -31,7 +31,9 @@ The solution I went with -and it worked really well- was to spin up a [Linode Na
 ## Setup
 Signing up for the cloud provider is a straight forward process.  No surprises here.  Creating a Nanode is just two steps:
 1. Click __Create__
+
 ![create](/images/overcast/dynamic-public-cloud-server-ftw/01-create-a-nanode.png){:height="50%" width="50%"}
+
 2. Define your settings
 * Pick a __distro__
 * Select a __Region__
@@ -39,9 +41,11 @@ Signing up for the cloud provider is a straight forward process.  No surprises h
 * Don't worry about the label and tags.  This system won't live long.
 * Set your SSH keys or a root password for connecting.
 * Click __Create__
+
 ![settings](/images/overcast/dynamic-public-cloud-server-ftw/02-nanode-settings.png){:height="50%" width="50%"}
 
 Once you click the create button it takes a few seconds for the new box to provision and boot.  The __Summary__ page lists the IPv4 and IPv6 addresses.
+
 ![boot](/images/overcast/dynamic-public-cloud-server-ftw/03-boot.png){:height="50%" width="50%"}
 
 Two console web shells options are provided by Linode (Weblish and Glish) but you'll want to use your own SSH session from your box.  Once you gain SSH access you can do all the normal sysadmin things to scaffold your platform.  I was raised by graybeards so the lack of maintaining tools such as netstat and ifconfig is disconcerting to say the least.  Yet I will resist the urge to install net-tools.  This host is bare bones right now so let's add what we need.
