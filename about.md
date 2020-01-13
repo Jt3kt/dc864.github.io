@@ -15,6 +15,9 @@ We meet on the 1st Thursday of every month at 6:00PM ET. Join our <a href="https
 ## Address:
 Synergy Mill, 400 Birnie St, Greenville, SC 29611
 
+## Slack Community:
+Join our online Slack community <a href="https://join.slack.com/t/dc864/shared_invite/enQtNDIzNDAyNzE4MTQ5LWUyYjkyZmFkYjg4OWExZDkzNWU0OTg1ZjMyMjM2MjQ3YzI2YmY4MzFlNjZiYzE3M2U5OGNlMGE2ZGZhMGY0NGU" target = "_blank">here</a>.
+
 ## Description:
 DC864 started in the fall of 2018, bringing together hackers in the Upstate, SC area. Our mission is to provide learning opportunities, resources, and camaraderie for anyone interested in technology and information security. We like to make things and break things. All ages/skill levels welcome. No dues, no fees.
 
