@@ -3,7 +3,7 @@ title: About DC864
 ---
 ## Location: Greenville, South Carolina USA
 ### Co Founders: Ben Acord (Overcast) and <a href="https://twitter.com/Eric_23_Hart" target = "_blank">Eric Hart (Jtekt)</a>
-### Slack Community: <a href="https://dc864.slack.com/" target = "_blank">https://dc864.slack.com</a>
+### Slack Community: <a href="https://join.slack.com/t/dc864/shared_invite/enQtNDIzNDAyNzE4MTQ5LWUyYjkyZmFkYjg4OWExZDkzNWU0OTg1ZjMyMjM2MjQ3YzI2YmY4MzFlNjZiYzE3M2U5OGNlMGE2ZGZhMGY0NGU" target = "_blank">https://dc864.slack.com</a>
 ### POC Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
 ### Twitter: <a href="https://twitter.com/defcon864" target = "_blank">Defcon864</a>
 
@@ -14,9 +14,6 @@ We meet on the 1st Thursday of every month at 6:00PM ET. Join our <a href="https
 
 ## Address:
 Synergy Mill, 400 Birnie St, Greenville, SC 29611
-
-## Slack Community:
-Join our online Slack community <a href="https://join.slack.com/t/dc864/shared_invite/enQtNDIzNDAyNzE4MTQ5LWUyYjkyZmFkYjg4OWExZDkzNWU0OTg1ZjMyMjM2MjQ3YzI2YmY4MzFlNjZiYzE3M2U5OGNlMGE2ZGZhMGY0NGU" target = "_blank">here</a>.
 
 ## Description:
 DC864 started in the fall of 2018, bringing together hackers in the Upstate, SC area. Our mission is to provide learning opportunities, resources, and camaraderie for anyone interested in technology and information security. We like to make things and break things. All ages/skill levels welcome. No dues, no fees.
