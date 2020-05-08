@@ -150,11 +150,17 @@ The first step for publishing your own articles is to fork the GitHub repository
 
 ![GitHub Fork](/images/jtekt/host2post/GitHubFork.png){:height="90%" width="90%"}
 
+---
+
 ### Update Content
 Here is where you can create and design articles to your liking within your forked code repository.  Follow the steps outlined under [Running DC864 Locally](#running-dc864-locally) to aid in writing and testing the presentation of your article.
 
+---
+
 ### Open a Pull Request
 The Pull Request is the mechanism that drives the only authorization needed to have content posted on the DC864 website.  One of the content administrators will be able to review the content submission and provide feedback directly associated to the pull request if any changes are required.  Once the pull request has been approved your article will be live!
+
+---
 
 ![GitHub Fork](/images/jtekt/host2post/GitHubPull.png){:height="90%" width="90%"}
 
