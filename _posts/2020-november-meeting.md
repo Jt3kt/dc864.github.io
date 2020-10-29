@@ -2,11 +2,12 @@
 title: "November 5th, 2020 Meeting"
 date: 2020-10-29 07:00:00 -0700
 layout: post
-author: OverCast
+author: Overcast
 twitter: "https://twitter.com/DefCon864"
 permalink: blog/2020-november-meeting.html
 tags: [Meeting Announcement]
 ---
+
 # Meeting Announcement
 Join us for the monthly DEFCON 864 group meeting November 5th 6 PM - 8:30 PM.
 
@@ -15,7 +16,7 @@ Our November topic is conducting an incident response tabletop exercise for your
 Location: Online and in-person at Synergy Mill; right side entrance with mailboxes.  The door locks so if you plan on attending in person be sure to join our Slack to let us know you arrive.
 All meetings are free to the public.  Noob to 1337 welcome.
 
-### AGENDA
+## AGENDA
 
 1. Opening and introductions
 2. Conducting an incident response tabletop exercise for your organization
