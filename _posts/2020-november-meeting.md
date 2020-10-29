@@ -1,6 +1,6 @@
 ---
 title: "November 5th, 2020 Meeting"
-date: 2020-10-29 07:00:00 +0000
+date: 2020-10-29 07:00:00 -0700
 layout: post
 author: OverCast
 twitter: "https://twitter.com/DefCon864"
