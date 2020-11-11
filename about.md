@@ -20,7 +20,7 @@ Synergy Mill, 400 Birnie St, Greenville, SC 29611
 ## Description:
 Upstate South Carolina's DEF CON group.
 
-DC864 started in the fall of 2018, bringing together hackers in the Upstate, SC area. Our mission is to provide learning opportunities, resources, and camaraderie for anyone interested in technology and information security. We like to make things and break things. All ages/skill levels welcome. No dues, no fees.
+DC864 started in the fall of 2018, bringing together hackers in the Upstate, SC area. Our mission is to provide learning opportunities, resources, and camaraderie for anyone interested in technology and information security. We like to make things and break things. All ages/skill levels welcome. No dues, no fees.  We support digital freedom: free expression, security, privacy, creativity, and access to knowledge.
 
 ## Interests: 
 Penetration testing, locksport, blue team / infosec defense, malware analysis, reverse engineering, capture the flag, and maker projects.
