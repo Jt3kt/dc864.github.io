@@ -1,12 +1,11 @@
 ---
 title: About DC864
 ---
-## Location: Greenville County, South Carolina USA
-Discord Community: <a href="https://discord.gg/yc2xVAxwUc" target = "_blank">Click to Join</a>
-Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-Twitter: <a href="https://twitter.com/defcon864" target = "_blank">Defcon864</a>
-YouTube: <a href="https://www.youtube.com/channel/UC5YT6GdO7o7ea3Sawo97LjQ" target = "_blank">DC864 Group</a>
-LinkedIn: <a href="https://www.linkedin.com/groups/12326833/" target = "_blank">Defcon Greenville / DC864</a>
+![discord](/images/discord.svg){:height="92px" width="92px"} Discord Community: <a href="https://discord.gg/yc2xVAxwUc" target = "_blank">Click to Join</a><br>
+![email](/images/email.svg){:height="92px" width="92px"} Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+![twitter](/images/twitter.svg){:height="92px" width="92px"} Twitter: <a href="https://twitter.com/defcon864" target = "_blank">Defcon864</a><br>
+![youtube](/images/youtube.svg){:height="92px" width="92px"} YouTube: <a href="https://www.youtube.com/channel/UC5YT6GdO7o7ea3Sawo97LjQ" target = "_blank">DC864 Group</a><br>
+![linkedin](/images/linkedin.svg){:height="92px" width="92px"} LinkedIn: <a href="https://www.linkedin.com/groups/12326833/" target = "_blank">DefCon Greenville / DC864</a><br>
 ---  
 
 ## Description:
@@ -15,10 +14,9 @@ Upstate South Carolina's DEF CON group.
 DC864 started in the fall of 2018 by co-founders Ben Acord (Overcast) and <a href="https://twitter.com/Eric_23_Hart" target = "_blank">Eric Hart (Jtekt)</a> to bring together hackers in the Upstate, SC area. Our mission is to provide learning opportunities, resources, and camaraderie for anyone interested in technology and information security. We like to make things and break things. All ages/skill levels welcome. No dues, no fees.  We support digital freedom: free expression, security, privacy, creativity, and access to knowledge.
 
 ### Meeting Schedule:
-We meet on the 1st Thursday of every month at 6 PM ET.  Meetings are both virtual and in-person.  The link to join the virtual meeting is posted to Slack (invite link above).
+We meet on the 1st Thursday of every month at 6 PM ET.  Meetings are both virtual and in-person at Synergy Mill (400 Birnie St, Greenville, SC 29611).  The link to join the virtual meeting is posted to Twitter and Discord (invite link above) right before the meeting starts.
 Follow us on <a href="https://twitter.com/defcon864" target = "_blank">Twitter</a> for up to date schedules and events.
-
-Online and at Synergy Mill, 400 Birnie St, Greenville, SC 29611
+And join our community on Discord which is where most of the interaction and networking takes place.
 
 ### Interests: 
 Penetration testing, locksport, blue team / infosec defense, malware analysis, reverse engineering, capture the flag, and maker projects.
