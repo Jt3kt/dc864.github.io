@@ -13,6 +13,9 @@ Join us for the monthly DEFCON 864 group meeting November 5th 6 PM - 8:30 PM.
 
 Our November topic is conducting an incident response tabletop exercise for your organization.  We will then have open floor discussion on various personal projects. #dc864 #defcon864 #defcongroups #yeahthatgreenville
 
+{% include youtubePlayer.html id="EFsrdQW8B6I" %}
+<!-- https://youtu.be/EFsrdQW8B6I -->
+
 Location: Online and in-person at Synergy Mill; right side entrance with mailboxes.  The door locks so if you plan on attending in person be sure to join our Slack to let us know you arrive.
 All meetings are free to the public.  Noob to 1337 welcome.
 
