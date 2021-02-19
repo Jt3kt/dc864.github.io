@@ -6,7 +6,8 @@ title: About DC864
 ![twitter](/images/twitter.svg){:height="24px" width="24px"} Twitter: <a href="https://twitter.com/defcon864" target = "_blank">Defcon864</a><br>
 ![youtube](/images/youtube.svg){:height="24px" width="24px"} YouTube: <a href="https://www.youtube.com/channel/UC5YT6GdO7o7ea3Sawo97LjQ" target = "_blank">DC864 Group</a><br>
 ![linkedin](/images/linkedin.svg){:height="24px" width="24px"} LinkedIn: <a href="https://www.linkedin.com/groups/12326833/" target = "_blank">DefCon Greenville / DC864</a><br>
----  
+
+---
 
 ## Description:
 Upstate South Carolina's DEF CON group.
