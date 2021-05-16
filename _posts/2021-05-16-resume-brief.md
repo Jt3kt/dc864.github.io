@@ -1,5 +1,5 @@
 ---
-title: "Resume Brief: Web Application Security"
+title: "Resume Brief Web Application Security"
 date: 2021-05-16 07:00:00 -0700
 layout: post
 author: Overcast
